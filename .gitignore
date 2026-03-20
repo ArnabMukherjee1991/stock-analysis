@@ -2,4 +2,9 @@
 **/target/
 **/db/pgdata/
 **/db/pgdata/**
+exchange-data-consumer/db/
+exchange-data-consumer/target/
+exchange-data-producer/target/
+stock-analysis-ops/cache/
+stock-analysis-ops/data/
 **/.DS_Store

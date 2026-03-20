@@ -2,6 +2,8 @@
 
 This folder turns the Kafka rollout into an executable plan for the current workspace.
 
+The operational path is `stock-analysis-ops` first, then producer and consumer on top of that foundation.
+
 ## Track Overview
 - [Local Docker Compose Plan](local-docker-compose-plan.md)
 - [Minikube + Helm Plan](minikube-helm-plan.md)
@@ -25,7 +27,7 @@ Kafka only stores bytes. The payload can be:
 - Use Protobuf only if you need stricter contracts across multiple languages.
 
 ## Phased Rollout
-1. Build the local Docker Compose foundation with scripts for certificates and smoke tests.
+1. Build the local Docker Compose foundation in `stock-analysis-ops` with scripts for certificates and smoke tests.
 2. Enable SSL locally and prove end-to-end connectivity.
 3. Add Schema Registry and schema validation locally.
 4. Move the same topology to Minikube with Helm charts.

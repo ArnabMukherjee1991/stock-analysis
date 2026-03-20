@@ -1,0 +1,5 @@
+.idea/
+**/target/
+**/db/pgdata/
+**/db/pgdata/**
+**/.DS_Store
